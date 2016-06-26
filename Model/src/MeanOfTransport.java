@@ -81,7 +81,7 @@ public class MeanOfTransport {
      */
     public int getTotalSeatsNumber()
     {
-        return m_placeLayout.getTotalSeatsNumber();
+        return m_placeLayout.getTotalPlacesNumber();
     }
 
     /**
