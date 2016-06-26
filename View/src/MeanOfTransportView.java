@@ -10,7 +10,11 @@ import java.util.logging.ConsoleHandler;
 
 public class MeanOfTransportView extends JPanel {
 
-   	public MeanOfTransportView(Travel tr) {
+    private List<ActionListener> actionListeners;
+
+   	public MeanOfTransportView(List<ActionListener> actionListeners, Travel tr) {
+
+        this.actionListeners = actionListeners;
 
         setBounds(100, 100, 576, 553);
 
@@ -55,7 +59,7 @@ public class MeanOfTransportView extends JPanel {
                     AbstractButton ab = (AbstractButton)actionEvent.getSource();
 
                     // create a snapshot of all listeners
-                    List<ActionListener> snapshot = actionListeners;
+                    List<ActionListener> snapshot = MeanOfTransportView.this.actionListeners;
 
                     for(ActionListener a : snapshot)
                     {
@@ -87,23 +91,5 @@ public class MeanOfTransportView extends JPanel {
         }
 
 	}
-
-    private List<ActionListener> actionListeners = new ArrayList<ActionListener>();
-
-    public void subscribe(ActionListener actionListener)
-    {
-        actionListeners.add(actionListener);
-    }
-
-    public void unsubscribe(ActionListener actionListener)
-    {
-        if(actionListeners.contains(actionListener))
-            actionListeners.remove(actionListener);
-    }
-
-    public void showWindow()
-    {
-        setVisible(true);
-    }
 
 }

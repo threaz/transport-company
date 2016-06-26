@@ -1,6 +1,7 @@
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -76,7 +77,11 @@ public class PlaceOrderingView {
 
         orderView = new OrderView();
 
-        meanOfTransportView1 = new MeanOfTransportView(currentTravel);
-        meanOfTransportView1.subscribe(orderView);
+        meanOfTransportView1 = new MeanOfTransportView(new ArrayList<ActionListener>()
+        {
+           {
+               add(orderView);
+           }
+        }, currentTravel);
     }
 }
