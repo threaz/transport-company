@@ -42,7 +42,7 @@ public class TravelSearchingView {
         actionListeners = al;
         this.customerEmail = customerEmail;
 
-        frame = new JFrame("TravelSearchingView");
+        frame = new JFrame("Find yourself a travel");
         frame.setContentPane(travelSearchingView);
         frame.setMinimumSize(new Dimension(500, 300));
         frame.setLocationRelativeTo(null);

@@ -22,7 +22,7 @@ public class RegisterCustomerView extends StateHolder {
     private JFrame frame;
 
     public RegisterCustomerView() {
-        frame = new JFrame("RegisterCustomerView");
+        frame = new JFrame("Register to our service");
         frame.setContentPane(RegisterCustomerView);
         frame.setMinimumSize(new Dimension(400, 300));
         frame.setLocationRelativeTo(null);

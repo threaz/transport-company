@@ -27,7 +27,7 @@ public class PlaceOrderingView {
         actionListeners = al;
         currentTravel   = tr;
 
-        frame = new JFrame("PlaceOrderingView");
+        frame = new JFrame("Get yourself a place");
         frame.setContentPane(placeOrderingView);
         frame.setLocationRelativeTo(null);
 

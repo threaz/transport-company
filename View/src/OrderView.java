@@ -42,7 +42,7 @@ public class OrderView extends JTextPane implements ActionListener {
         result += "Total: " + Integer.toString(resultAmount);
 
         if(orders.isEmpty())
-            setText("Zamówienie jest puste");
+            setText("Order is empty");
         else
             setText(result);
 
@@ -76,7 +76,7 @@ public class OrderView extends JTextPane implements ActionListener {
 
     public OrderView()
     {
-        setText("Zamówienie jest puste");
+        setText("Order is empty");
         setPreferredSize(new Dimension(100, 100));
     }
 }

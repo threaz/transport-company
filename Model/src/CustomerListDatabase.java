@@ -6,7 +6,7 @@ import java.util.Map;
 /**
  * Created by threaz on 12/06/16.
  */
-public class CustomerListDatabase implements ClientDatabase {
+public class CustomerListDatabase implements CustomerDatabase {
 
     private List<Customer>      m_customers = new ArrayList<>();
     private Map<String, String> m_passwds   = new HashMap<>();

@@ -5,7 +5,7 @@
 
 // bridge pattern
 
-public interface ClientDatabase {
+public interface CustomerDatabase {
 
     /**
      * Add customer to the database.

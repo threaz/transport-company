@@ -17,18 +17,18 @@ public class ViewController implements ActionListener {
     public enum RegisterState             { OK_REGISTER, CUSTOMER_EXISTS };
 
     private ReservationSystem reservationSystem;
-    private ClientDatabase    database;
+    private CustomerDatabase database;
 
     /**
      * Create ViewController.
      *
      * @param reservationSystem system that handles reservations performed by customers
-     * @param clientDatabase database that manages customers
+     * @param customerDatabase database that manages customers
      */
-    public ViewController(ReservationSystem reservationSystem, ClientDatabase clientDatabase)
+    public ViewController(ReservationSystem reservationSystem, CustomerDatabase customerDatabase)
     {
         this.reservationSystem = reservationSystem;
-        this.database          = clientDatabase;
+        this.database          = customerDatabase;
     }
 
     /**

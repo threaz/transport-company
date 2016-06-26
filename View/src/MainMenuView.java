@@ -1,13 +1,12 @@
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.ArrayList;
 import java.util.List;
 
 /**
  * Created by threaz on 13/06/16.
  */
-public class MyMenuView extends StateHolder {
+public class MainMenuView extends StateHolder {
 
     private JPanel MenuView;
     private JButton buy_button;
@@ -18,12 +17,12 @@ public class MyMenuView extends StateHolder {
 
     private String customerEmail = null;
 
-    public MyMenuView(String customerEmail, List<ActionListener> al) {
+    public MainMenuView(String customerEmail, List<ActionListener> al) {
 
         actionListeners = al;
         this.customerEmail = customerEmail;
 
-        frame = new JFrame("MyMenuView");
+        frame = new JFrame("Main menu");
         frame.setContentPane(MenuView);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
@@ -45,7 +44,7 @@ public class MyMenuView extends StateHolder {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
 
-                TravelSearchingView travelSearchingView = new TravelSearchingView(MyMenuView.this.customerEmail,
+                TravelSearchingView travelSearchingView = new TravelSearchingView(MainMenuView.this.customerEmail,
                         actionListeners);
 
                 travelSearchingView.showWindow();
@@ -56,14 +55,14 @@ public class MyMenuView extends StateHolder {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
 
-                ProfileEditView pew = new ProfileEditView(MyMenuView.this.customerEmail, actionListeners);
+                ProfileEditView pew = new ProfileEditView(MainMenuView.this.customerEmail, actionListeners);
             }
         });
         basket_button.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
 
-                BasketView basketView = new BasketView(MyMenuView.this.customerEmail, actionListeners);
+                BasketView basketView = new BasketView(MainMenuView.this.customerEmail, actionListeners);
 
                 basketView.showWindow();
             }

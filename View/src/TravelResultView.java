@@ -29,7 +29,7 @@ public class TravelResultView {
         actionListeners = al;
         this.customerEmail = customerEmail;
 
-        frame = new JFrame("TravelResultView");
+        frame = new JFrame("Your results");
         frame.setContentPane(panel1);
         frame.setMinimumSize(new Dimension(890, 300));
         frame.setLocationRelativeTo(null);

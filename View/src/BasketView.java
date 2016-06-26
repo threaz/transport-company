@@ -28,7 +28,7 @@ public class BasketView {
         this.customerEmail   = customerEmail;
         this.actionListeners = actionListeners;
 
-        frame = new JFrame("BasketView");
+        frame = new JFrame("Your basket");
         frame.setContentPane(basketView);
         frame.setMinimumSize(new Dimension(1130, 300));
         frame.setLocationRelativeTo(null);
@@ -50,7 +50,7 @@ public class BasketView {
 
 
         dtm = new DefaultTableModel();
-        dtm.addColumn("ID");
+        dtm.addColumn("Travel ID");
         dtm.addColumn("From");
         dtm.addColumn("To");
         dtm.addColumn("Departure");

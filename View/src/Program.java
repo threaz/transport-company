@@ -11,9 +11,9 @@ public class Program
     {
         Company company                      = new Company();
         ReservationSystem reservationSystem  = ReservationSystem.getInstance();
-        ClientDatabase    clientDatabase     = new CustomerListDatabase();
+        CustomerDatabase customerDatabase = new CustomerListDatabase();
 
-        ViewController viewControler  = new ViewController(reservationSystem, clientDatabase);
+        ViewController viewControler  = new ViewController(reservationSystem, customerDatabase);
         LoginView             loginWindow    = new LoginView();
 
         makeTravels(company, reservationSystem);

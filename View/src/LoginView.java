@@ -24,7 +24,7 @@ public class LoginView extends StateHolder {
 
     public LoginView() {
 
-        frame = new JFrame("LoginView");
+        frame = new JFrame("Log in to your account");
         frame.setContentPane(LoginWindow);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
@@ -78,7 +78,7 @@ public class LoginView extends StateHolder {
 
     public void showMainMenuWindow()
     {
-        MyMenuView mainMenuWindow = new MyMenuView(customerEmail, actionListeners);
+        MainMenuView mainMenuWindow = new MainMenuView(customerEmail, actionListeners);
 
         frame.dispose();
         frame.setVisible(false);

@@ -27,7 +27,7 @@ public class ProfileEditView {
         this.customerEmail   = customerEmail;
         this.actionListeners = actionListeners;
 
-        frame = new JFrame("ProfileEditView");
+        frame = new JFrame("Edit your profile");
         frame.setContentPane(profileEditView);
 
         frame.setResizable(false);
