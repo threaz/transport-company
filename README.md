@@ -28,13 +28,13 @@ As the company using the application will grow, there can appear different possi
 # User running the application<a id="sec-4" name="sec-4"></a>
 
 Basic session with my application includes the following steps:
-1.  Registration of the user
-2.  Logging in
-3.  Searching for desired travel
-4.  Creating the order by selecting places in the transport vehicle
-5.  (Optional) Managing the orders(removing unwanted)
-6.  Paying for the orders
-7.  (Optional) Editing profile information of user
+1.  Registration of the user  
+2.  Logging in  
+3.  Searching for desired travel  
+4.  Creating the order by selecting places in the transport vehicle  
+5.  (Optional) Managing the orders(removing unwanted)  
+6.  Paying for the orders  
+7.  (Optional) Editing profile information of user  
 
 # Running the application<a id="sec-5" name="sec-5"></a>
 
