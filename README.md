@@ -38,4 +38,4 @@ Basic session with my application includes the following steps:
 
 # Running the application<a id="sec-5" name="sec-5"></a>
 
-    cd TransportCompany && ./run_program.sh
+    cd transport-company && ./run_program.sh
