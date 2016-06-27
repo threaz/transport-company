@@ -27,7 +27,7 @@ As the company using the application will grow, there can appear different possi
 
 # User running the application<a id="sec-4" name="sec-4"></a>
 
-Basic session with my application includes the following steps:
+Basic session with my application includes the following steps:  
 1.  Registration of the user  
 2.  Logging in  
 3.  Searching for desired travel  
